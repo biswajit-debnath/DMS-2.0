@@ -1,0 +1,53 @@
+.footer_parent{
+    background-color: #01579b;
+}
+
+
+.footer_parent2{
+    
+    display: flex;
+   justify-items: center;
+    
+}
+
+.footer_child2{
+    margin: 1rem;
+    color: azure;
+    
+    align-items: center;
+    flex-basis: 100%;
+    text-align: left;
+}
+
+
+
+.footer_parent1{
+    
+    display: flex;
+   justify-items: center;
+    
+}
+
+.footer_child1{
+    margin: 1rem;
+    color: azure;
+    
+    align-items: center;
+    flex-basis: 100%;
+    text-align: left;
+}
+
+
+
+
+.footer_child1_heading
+{
+    font-weight: bold;
+}
+
+hr{
+    height:2px;
+          border-width:0;
+          color:gray;
+          background-color:gray
+}

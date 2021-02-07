@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+
+.service {
+    margin-top:3rem;
+}
+
+.service-heading {
+    margin-left: 13rem;
+}
+
+.service-heading p {
+    font-size: 1.5rem;
+    font-weight:bold;
+    color: #32436B;
+}
+
+.service-heading span{
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    font-weight:bold;
+    color: #32436B;
+    width: 6rem;
+    color: red;
+}
+
+.service-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 2rem;
+    margin-left: 8rem;
+}
+
+.div-top {
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 2rem;
+}
+
+.div-bottom {
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 2rem;
+}
+
+.div-left {
+    display: flex;
+    align-items: flex-end;
+    width: 460px;
+    height: 593px;
+    /* margin-top: 0.5rem; */
+    background-image: url(../../assets/burnfitness.png);
+}
+
+.div-top-left {
+    display: flex;
+    align-items: flex-end;
+    width: 420px;
+    height: 280px;
+    margin-right: 2rem;
+    background-image: url(../../assets/burnfitness.png);
+}
+
+.div-top-right {
+    display: flex;
+    align-items: flex-end;
+    width: 325px;
+    height: 280px;
+    background-image: url(../../assets/burnfitness.png);
+}
+
+.div-bottom-left {
+    display: flex;
+    align-items: flex-end;
+    width: 325px;
+    height: 280px;
+    margin-right: 2rem;
+    background-image: url(../../assets/burnfitness.png);
+}
+
+.div-bottom-right {
+    display: flex;
+    align-items: flex-end;
+    width: 420px;
+    height: 280px;
+    background-image: url(../../assets/burnfitness.png);
+}
+
+.service-dec {
+    width:100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height:90px;
+    background-color:#242A41;
+    opacity: 0.9;
+}
+
+.service-dec:hover {
+    width:100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height:200px;
+    background-color:#242A41;
+    opacity: 0.9;
+    transition:1s;
+}
+
+.service-dec p{
+    width: 100%;
+
+   color: antiquewhite;
+   font-family: 'Yusei Magic', sans-serif;
+}
