@@ -20,7 +20,9 @@ function Navbar() {
                 <FaIcons.FaBars onClick={showSidebar} />
             </Link>
             <p className='catagories-desc'>See all Catagories</p>
+          <div className="triangle"></div>
           </div>
+
           <a className='display-catagories'>Printing Material</a>
           <a className='display-catagories'>Printing Services</a>
           <a className='display-catagories'>Printing Machinary</a>

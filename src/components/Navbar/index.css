@@ -11,20 +11,20 @@
     background-color: #fff;
     height: 9vh;
     display: flex;
-    justify-content: start;
+    padding: 2rem;
+    justify-content: space-between;
     align-items: center;
     /* border-bottom: solid;
     border-width: 0.1rem; */
   }
 
   .logo {
-    margin: 2rem;
     color: #000;
   }
 
   .Search-Bar {
-    margin-left: 19rem;
-    padding: 5rem;
+   justify-self: center;
+   
   }
 
   .Search-Bar input {
@@ -43,7 +43,6 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-left: 10rem;
   }
    
   .search__input {
