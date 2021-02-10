@@ -5,6 +5,10 @@ import * as BsiIcons from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import './index.css';
 
+import product from '../../assets/product.svg';
+import heart from '../../assets/heart.svg';
+
+
 function Navbar() {
     return (
         <>
@@ -21,19 +25,21 @@ function Navbar() {
                 <div className="nav-wrapper">
                     <div className="profile" >
                         <Link to='#' className='menu-bars'>
-                        <FaIcons.FaUser />
+                            <div>
+                            <img src={product} />
+                            <p>Product</p>
+                            </div>
                         </Link>
                     </div>
                     <div className="wishlist">
                     <Link to='#' className='menu-bars'>
-                        <FiIcons.FiHeart />
+                        <div>
+                        <img src={heart} />
+                        <p>Wishlist</p>
+                        </div>
                     </Link>
                     </div>
-                    <div className="bag">
-                        <Link to='#' className='menu-bars'>
-                        <FaIcons.FaWeightHanging />
-                        </Link>
-                    </div>
+                   
                 </div>
             </div>
         </>

@@ -14,10 +14,6 @@ function Homepagemenu2() {
     return (
         <>
             <div className='menu'>
-                {/* <div className='menu-heading'>
-                    <p className='menu-name'><span className='menu-name-span'>-</span>PRINTING SERVICES</p>
-                    <p className='menu-view'>View All</p>
-                </div> */}
                 <div className="menu-heading">
                     <div className='menu-heading-bold'>
                             <h1>ACCESSORIES</h1>
@@ -30,7 +26,7 @@ function Homepagemenu2() {
                         IT & COMPUTER ACCESSORIES
                     </p>
                     </div>
-                    <p className='menu-view2'>View All<span>
+                    <p className='menu-view'>View All<span>
                             <IconContext.Provider value={{ color: "#32436b", size: "25px"}}>
                                  <FiIcons.FiArrowRight />
                             </IconContext.Provider>

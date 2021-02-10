@@ -33,15 +33,20 @@
   }
 
   .menu-bars {
-    margin-left: 2rem;
-    font-size: 1.5rem;
-    background: none;
-    color: #000;
+  text-decoration: none;
   }
-  
+  .menu-bars div {
+    text-align: center;
+  }
+  .menu-bars p{
+    font-size: 0.6rem;
+  } 
+  .menu-bars img {
+    width: 1.3rem;
+  }
   .nav-wrapper {
     display: flex;
-    justify-content: start;
+    gap: 1.5rem;
     align-items: center;
   }
    
