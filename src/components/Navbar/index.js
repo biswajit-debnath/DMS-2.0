@@ -14,7 +14,7 @@ function Navbar() {
         <>
             <div className="Navbar">
                 <div className="logo">
-                    <h2>DMSNE</h2>
+                    <Link className="linkStyle" to="/"><h2>DMSNE</h2></Link>
                 </div>
                 <div className="Search-Bar">
                     <form action="#">
@@ -46,4 +46,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Navbar;

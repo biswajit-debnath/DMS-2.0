@@ -23,7 +23,7 @@ function Navbar() {
           <div className="triangle"></div>
           </div>
 
-          <a className='display-catagories'>Printing Material</a>
+          <Link className="linkStyle" to="/listing"><p className='display-catagories'>Printing Material</p></Link>
           <a className='display-catagories'>Printing Services</a>
           <a className='display-catagories'>Printing Machinary</a>
           <a className='display-catagories'>Clothing</a>

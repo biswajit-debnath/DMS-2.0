@@ -11,6 +11,7 @@ import img4 from '../../assets/product4.png';
 import img5 from '../../assets/product5.png';
 import { IconContext } from 'react-icons';
 
+
 function Products() {
     const [heart, setHeart] = useState(false);
 
@@ -91,7 +92,7 @@ function Products() {
                             <p>Product Name</p>
                        </div>
                        <div className='product-btn'>
-                            <button className='btn'>View Now</button>
+                            <Link to="/info"><button className='btn'>View Now</button></Link>
                        </div>
                    </div>
                </div>
