@@ -81,7 +81,7 @@ function Info() {
 
       <div className="productMain_Right">
         <div>
-          <h1>JD9 Paper Cutter A4 Heavy Duty Professional Paper Trimmer</h1>
+          <h2 className="prod-heading">JD9 Paper Cutter A4 Heavy Duty Professional Paper Trimmer</h2>
           <div className="prc-2ndLine">
             <h3>
               {" "}
@@ -109,6 +109,7 @@ function Info() {
               10 Comments
             </p>
           </div>
+          <hr></hr>
           <h3 className="prod_desc_info">Product Description</h3>
           <div className="prc-4thLine">
             <p className="blueFont">BRAND: JD9</p>
@@ -131,11 +132,12 @@ function Info() {
 
           <button className="btnContactUs">CONTACT US</button>
           <br></br>
-          <hr></hr>
+          <hr className="after2ndline"></hr>
         </div>
 
         <div className="prod-customerReview">
-          <h3>Customer Reviews (10)</h3>
+          <h3 className="prod-cust_review">Customer Reviews (10)</h3>
+
           <div className="prod-singleReview">
             <p>
               The product quality is really good. It looks the same as in the
@@ -153,8 +155,30 @@ function Info() {
               </div>
             </div>
           </div>
-          <hr></hr>
+          <hr className="prod-hr-reviews"></hr>
+
         </div>
+
+        <div className="prod-singleReview">
+            <p>
+              The product quality is really good. It looks the same as in the
+              images provided. There were no color difference in the product
+              that was delivered. I am very much satisfied with the product
+            </p>
+            <div className="prod-reviewDetails">
+              <div className="prod-reviewDetails-nameDate">
+                <p>Vineeth Nambiar |&nbsp;</p>
+                <p> 11 Dec 2020</p>
+              </div>
+              <div>
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <hr className="prod-hr-reviews"></hr>
+
+        
       </div>
     </div>
   );

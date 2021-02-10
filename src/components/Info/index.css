@@ -10,15 +10,16 @@
 
 .productMain_parent {
   max-width: 100vw;
-  width: 80%;
+
   /* height: 50vh; */
   margin: auto;
   margin-top: 5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .productInfo {
+  font-size: 1.2rem;
   max-width: 90%;
 }
 
@@ -32,9 +33,16 @@
 .productMain_left {
   /* margin: 24px; */
 
-  margin: 24px;
+
+  margin-right: 60px;
 
   flex: 1fr 1fr;
+
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  
 }
 
 .productMain_Right {
@@ -46,15 +54,16 @@
   width: 45%;
 }
 
-#productMain-imgLarge {
-  -webkit-box-shadow: 0px 0px 29px 5px #0000001f;
-  box-shadow: 0px 3px 25px 5px #0000001f;
-
+#productMain-il {
+  -webkit-box-shadow: 1px 4px 17px 14px rgba(174,174,174,0.52); 
+  box-shadow: 0px 3px 25px #0000001F;
   margin: 24px;
 
-  object-fit: contain;
+  object-fit: cover;
   width: 25rem;
   height: 25rem;
+  margin: auto;
+  margin-bottom: 28px;
 }
 
 .productMain-divSmall {
@@ -86,6 +95,8 @@
 
 .prc-2ndLine {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #title-name {
@@ -110,9 +121,11 @@
   }
 
 .prc-4thLine {
+
+
   display: flex;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .prc-4thLine p {
@@ -121,13 +134,13 @@
 
 .originalPrice {
   margin-top: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 
   color: #8f8f8f;
 }
 
 .ourPrice {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -137,31 +150,36 @@
 }
 
 .blueFont {
+
   font-weight: 900;
 
   color: #3858a2;
 }
 
 .btnContactUs {
-  border-radius: 12px;
+  border-radius: 6px;
   margin-bottom: 5rem;
+  
 }
 
 .btnContactUs {
   background-color: white;
   color: #ef4343;
   border: 2px solid #ef4343;
-  width: 14rem;
-  height: 4rem;
+  width: 20rem;
+  height: 5rem;
   font-size: 1.5rem;
   font-weight: bold;
+ 
 }
 
 .btnContactUs:hover {
   cursor: pointer;
   background-color: #ef4343;
   color: whitesmoke;
+  border: none;
 }
+
 
 #ratings {
   text-align: end;
@@ -173,7 +191,8 @@
 
 .prod-customerReview {
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+ 
 }
 
 .prod-reviewDetails {
@@ -192,6 +211,8 @@
 }
 
 hr {
+  margin-top: 12px;
+  margin-bottom: 34px;
     opacity: 0.3;
     height: 0.5px;
     border-width: 0;
@@ -200,6 +221,7 @@ hr {
   }
 
   .prod-singleReview p {
+    margin-top: 0%;
     font-weight: bolder;
     font-weight: 400;
   }
@@ -218,3 +240,24 @@ hr {
     margin-top: 12px;
     margin-bottom: -18px;
   }
+
+  .prod-heading{
+    margin-bottom: 24px;
+  }
+
+
+  .prod-cust_review{
+
+    margin-bottom: 1rem;
+  }
+
+
+  .prod-hr-reviews{
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+
+  .prod-singleReview p{
+    line-height: 150%
+  }
+  
