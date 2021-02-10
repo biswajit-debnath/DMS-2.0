@@ -1,5 +1,6 @@
 .footer_parent{
-    background-color: #01579b;
+    background-color: #060B26;
+    opacity: 1;
 }
 
 
@@ -13,7 +14,6 @@
 .footer_child2{
     margin: 1rem;
     color: azure;
-    
     align-items: center;
     flex-basis: 100%;
     text-align: left;
@@ -22,7 +22,7 @@
 
 
 .footer_parent1{
-    
+    padding:3rem;
     display: flex;
    justify-items: center;
     
@@ -37,7 +37,10 @@
     text-align: left;
 }
 
-
+.contact-desc p {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
 
 
 .footer_child1_heading
@@ -45,9 +48,45 @@
     font-weight: bold;
 }
 
+
+
 hr{
     height:2px;
           border-width:0;
           color:gray;
           background-color:gray
+}
+
+
+.footer-btn{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+   
+}
+
+
+#footer-btnSubmit{
+    flex-basis: 1;
+    border-radius: 0;
+    height: 41px;
+    width: 112px;
+
+    color: white;
+    background-color: #424242;
+    opacity: 1;
+    border:none;
+}
+
+#footer-btnInput{
+    flex-grow: 2;
+    height: 40px;
+    
+
+}
+
+.footer_child1 p
+{
+    margin-top:10px
 }

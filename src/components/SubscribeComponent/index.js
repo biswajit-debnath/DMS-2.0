@@ -7,9 +7,9 @@ function SubscribeComponent() {
       <div className="subscribe_child">
           <p id="subscribe-1stLine">Lets stay in touch</p>
           <p id="subscribe-2ndLine">Enjoy 15% off your first order when you join our mailing list.</p>
-          <div>
+          <div className="subscribe-btn">
               <input id="subscribe-btnInput"></input>
-              <button id="subscribe-btnSubmit">SUBMIT</button>
+              <button id="subscribe-btnSubmit">Subscribe</button>
           </div>
           <p>We respect your privacy, so we never share your info.</p>
       </div>

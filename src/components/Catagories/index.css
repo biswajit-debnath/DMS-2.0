@@ -13,8 +13,8 @@
   .catagories-bar {
       position: relative;
       background-color: #060b26;
-      width: 17rem;
-      height: 9vh;
+      
+      height: 58px ;
       display: flex;
       justify-content: start;
       align-items: center;
@@ -25,8 +25,8 @@
   .triangle {
       width: 0;
       height: 0;;
-      border-top: 9vh solid white;
-      border-left: 9vh solid transparent;
+      border-top: 58px solid white;
+      border-left:58px solid transparent;
   }
 
   .catagories-desc{
@@ -36,12 +36,12 @@
   
   .display-catagories{
     padding: 1rem;
-    height: 100%;
+    /* padding-right: 1rem; */
+    height: 58px;
     display: flex;
     align-items: center;
-     cursor: pointer;
-     font-family: 'Yusei Magic', sans-serif;
-    
+    cursor: pointer;
+    font-family: 'Yusei Magic', sans-serif; 
   }
 
   .display-catagories:hover {

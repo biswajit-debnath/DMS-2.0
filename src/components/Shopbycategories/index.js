@@ -14,6 +14,9 @@ function Shopbycategories() {
   return (
     <div className="shopbycategories-wrapper">
       <div className="shopbycategories-heading">
+          <div className='shopbycategories-heading-bold'>
+              <h1>CATEGORIES</h1>
+          </div>
         <p>
           <span>
             <IconContext.Provider value={{ color: "#32436b", size: "50px" }}>

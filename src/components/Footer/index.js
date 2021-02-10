@@ -9,10 +9,10 @@ export default function FooterComponent() {
 <div className="footer_parent1">
       <div className="footer_child1">
         <p className="footer_child1_heading">Contact Info</p>
-        <div>
-          <p>
+        <div className='contact-desc'>
             <p>Phone: +4 (509) 120 6705</p>
-            Address: 1418 Riverwood Drive, <br></br>
+            
+          <p>Address: 1418 Riverwood Drive, <br></br>
             Suite 3245 Cottonwood,<br></br>
             CA 96052, United State We accept:
           </p>
@@ -40,10 +40,10 @@ export default function FooterComponent() {
       <div className="footer_child1">
         <p className="footer_child1_heading">Let's stay in touch</p>
 
-        <div>
-            <input type="text"></input>
-            <button>Subscribe</button>
-        </div>
+        <div className="footer-btn">
+              <input id="footer-btnInput"></input>
+              <button id="footer-btnSubmit">SUBMIT</button>
+          </div>
 
         <p>Keep up to date with our latest news <br></br>and special offers.</p>
       </div>
@@ -55,7 +55,7 @@ export default function FooterComponent() {
     <div className="footer_parent2">
 
         <div className="footer_child2">
-        © 2019, Seoulify Website. Made with passion
+        © 2021, Made with ❤️ by Digicenter Assam
 
         </div>
         <div className="footer_child2" style={{

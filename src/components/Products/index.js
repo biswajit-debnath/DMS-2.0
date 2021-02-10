@@ -4,6 +4,11 @@ import * as FcIcons from "react-icons/fc";
 import { Link } from 'react-router-dom';
 import './index.css';
 import img from '../../assets/burnfitness.png';
+import img1 from '../../assets/product1.png';
+import img2 from '../../assets/product2.png';
+import img3 from '../../assets/product3.png';
+import img4 from '../../assets/product4.png';
+import img5 from '../../assets/product5.png';
 import { IconContext } from 'react-icons';
 
 function Products() {
@@ -21,13 +26,14 @@ function Products() {
                        </div>
                        <div className='product-wishlist'>
                             <Link to='#' className='heart-btn'>
-                                {heart ? <FcIcons.FcLike onClick={showHeart} /> : <FiIcons.FiHeart onClick={showHeart} /> }
+                                {heart ? <FcIcons.FcLike onClick={showHeart} /> 
+                                        : <FiIcons.FiHeart onClick={showHeart} /> }
                             </Link> 
                        </div>
                    </div>
                    <div className='product-img-section'>
                        <div className='product-img'>
-                            <img src={img} width="276" height="276" /> 
+                            <img src={img1} width="206" height="206" /> 
                        </div>
                    </div>
                    <div className='product-info'>
@@ -35,7 +41,7 @@ function Products() {
                             <p>Product Name</p>
                        </div>
                        <div className='product-btn'>
-                            <button className='btn'>View</button>
+                            <button className='btn'>View Now</button>
                        </div>
                    </div>
                </div>
@@ -52,7 +58,7 @@ function Products() {
                    </div>
                    <div className='product-img-section'>
                        <div className='product-img'>
-                            <img src={img} width="276" height="276" /> 
+                            <img src={img2} width="206" height="206" /> 
                        </div>
                    </div>
                    <div className='product-info'>
@@ -60,7 +66,7 @@ function Products() {
                             <p>Product Name</p>
                        </div>
                        <div className='product-btn'>
-                            <button className='btn'>View</button>
+                            <button className='btn'>View Now</button>
                        </div>
                    </div>
                </div>
@@ -70,14 +76,14 @@ function Products() {
                             <p>New</p>
                        </div>
                        <div className='product-wishlist'>
-                            <Link to='#' className='menu-bars'>
+                            <Link to='#' className='heart-btn'>
                                 <FiIcons.FiHeart />
                             </Link> 
                        </div>
                    </div>
                    <div className='product-img-section'>
                        <div className='product-img'>
-                            <img src={img} width="276" height="276" /> 
+                            <img src={img3} width="206" height="206" /> 
                        </div>
                    </div>
                    <div className='product-info'>
@@ -85,7 +91,7 @@ function Products() {
                             <p>Product Name</p>
                        </div>
                        <div className='product-btn'>
-                            <button className='btn'>View</button>
+                            <button className='btn'>View Now</button>
                        </div>
                    </div>
                </div>
@@ -95,14 +101,14 @@ function Products() {
                             <p>New</p>
                        </div>
                        <div className='product-wishlist'>
-                            <Link to='#' className='menu-bars'>
+                            <Link to='#' className='heart-btn'>
                                 <FiIcons.FiHeart />
                             </Link> 
                        </div>
                    </div>
                    <div className='product-img-section'>
                        <div className='product-img'>
-                            <img src={img} width="276" height="276" /> 
+                            <img src={img4} width="206" height="206" /> 
                        </div>
                    </div>
                    <div className='product-info'>
@@ -110,7 +116,7 @@ function Products() {
                             <p>Product Name</p>
                        </div>
                        <div className='product-btn'>
-                            <button className='btn'>View</button>
+                            <button className='btn'>View Now</button>
                        </div>
                    </div>
                </div>

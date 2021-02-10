@@ -1,11 +1,14 @@
 import React, { useState,useEffect } from "react";
 import './index.css';
+import img from "../../assets/banner3.jpg";
+import img2 from "../../assets/banner2.jpg";
+import img3 from "../../assets/banner1.jpg";
 
 const ImageSlider = () => { // takes in images as props
   
-  const images = ['https://images.unsplash.com/photo-1599394022918-6c2776530abb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1458&q=80',
-                  'https://images.unsplash.com/photo-1599561046251-bfb9465b4c44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1492&q=80',
-                  'https://images.unsplash.com/photo-1599423300746-b62533397364?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80'
+  const images = [img,
+                  img2,
+                  img3
 ]  
   const [index, setIndex] = useState(0); // create state to keep track of images index, set the default index to 0
 

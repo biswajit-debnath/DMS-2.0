@@ -2,35 +2,44 @@
 
 
 .service {
-    margin-top:3rem;
+    /* margin-top:3rem; */
+    margin-top: -2rem;;
 }
 
 .service-heading {
-    margin-left: 13rem;
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+}
+
+.service-heading-bold {
+    font-size: 1.8rem;
+    color: #ECECEC;
 }
 
 .service-heading p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight:bold;
     color: #32436B;
+    display: flex;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: 1.5rem;
+    margin-bottom: 1vh;
+    line-height: 0 !important;
 }
 
 .service-heading span{
     margin-right: 0.5rem;
     font-size: 2rem;
     font-weight:bold;
-    color: #32436B;
-    width: 6rem;
-    color: red;
+    
 }
 
 .service-wrapper {
     display: flex;
-    justify-content: start;
-    align-items: center;
-    background-color: #fff;
-    margin-top: 2rem;
-    margin-left: 8rem;
+    justify-content: space-between;
+    width:80%;
+    margin: auto;
 }
 
 .div-top {
@@ -50,46 +59,58 @@
 }
 
 .div-left {
-    display: flex;
+    display: flex; 
     align-items: flex-end;
-    width: 460px;
+    width: 45%;
     height: 593px;
-    /* margin-top: 0.5rem; */
-    background-image: url(../../assets/burnfitness.png);
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    /* background-color: red; */
+    background: url(../../assets/Living\ in\ colors.png) no-repeat center;
+    background-size: cover;
+}
+
+.div-right {
+    width: 90%;
+    /* background-color: aqua; */
 }
 
 .div-top-left {
     display: flex;
     align-items: flex-end;
-    width: 420px;
+    width: 40%;
     height: 280px;
     margin-right: 2rem;
-    background-image: url(../../assets/burnfitness.png);
+    background-image: url(../../assets/Packaging\ Materials.png);
+    background-size: cover;
 }
 
 .div-top-right {
     display: flex;
     align-items: flex-end;
-    width: 325px;
+    width: 55%;
     height: 280px;
-    background-image: url(../../assets/burnfitness.png);
+    background-image: url(../../assets/Printing\ Books.png);
+    background-size: cover;
 }
 
 .div-bottom-left {
     display: flex;
     align-items: flex-end;
-    width: 325px;
+    width: 55%;
     height: 280px;
     margin-right: 2rem;
-    background-image: url(../../assets/burnfitness.png);
+    background-image: url(../../assets/Ideal\ Branding.png);
+    background-size: cover;
 }
 
 .div-bottom-right {
     display: flex;
     align-items: flex-end;
-    width: 420px;
+    width: 40%;
     height: 280px;
-    background-image: url(../../assets/burnfitness.png);
+    background-image: url(../../assets/Brand\ Printing.png);
+    background-size: cover;
 }
 
 .service-dec {
