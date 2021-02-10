@@ -13,3 +13,8 @@
   position:sticky;
   top: 0;
 }
+
+.linkStyle {
+  text-decoration: none;
+  color: black;
+}
