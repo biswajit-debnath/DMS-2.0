@@ -1,6 +1,8 @@
 .subscribe_parent {
   background:url(../../assets/colors.png);
   background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 80vh;
 
   display: flex;
