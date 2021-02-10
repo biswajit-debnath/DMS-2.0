@@ -1,4 +1,6 @@
 import React,{useState} from "react";
+import "./index.css";
+
 import {
   Magnifier,
   GlassMagnifier,
@@ -14,6 +16,11 @@ import paperCutterImgZoomed from '../../assets/paper cutter1.jpg';
 
 
 
+
+import star_hollow from "../../star_hollow.svg";
+
+import star_filled from "../../star_filled.svg";
+
 function Info() {
   const [currentImage, setCurrentImage] = useState(paperCutterImg);
   const [currentZoomedImage, setCurrentZoomedImage] = useState(paperCutterImgZoomed);
@@ -23,9 +30,25 @@ function Info() {
     setCurrentZoomedImage(clickedImage);
   }
 
+
+
+  function hollowStars(params) {
+    
+    var x = Array(params).fill().map((curr, i)=>{
+     return <img src={star_filled} className="ratingStars" />
+  })
+    var y = Array(5-params).fill().map((curr, i)=>{
+     return <img src={star_hollow} className="ratingStars" />
+    })
+    
+       
+      return x.concat(y);
+    ;
+  }
+
   return (
     <div className="productMain_parent">
-      <div class="productMain_left">
+       <div class="productMain_left">
         <div className="productMain-img" id="productMain-il">
         <SideBySideMagnifier
           fillAvailableSpace={true}
@@ -57,27 +80,36 @@ function Info() {
       </div>
 
       <div className="productMain_Right">
-        <div className='productMain_wrapper'>
-          <h1 id='title-name'>JD9 Paper Cutter A4 Heavy Duty Professional Paper Trimmer</h1>
+        <div>
+          <h1>JD9 Paper Cutter A4 Heavy Duty Professional Paper Trimmer</h1>
           <div className="prc-2ndLine">
-                <h3> RATINGS: ⭐ ⭐ ⭐ ⭐ ⭐</h3>
-                <p className="blueFont" id="ratings">
-                {" "}
-                200 Ratings
-                </p>
-                <p
-                style={{
-                    maxWidth: 10,
-                    textAlign: "center",
-                }}
-                >
-                |
-                </p>
-                <p className="blueFont" id="comments">
-                10 Comments
-                </p>
+            <h3>
+              {" "}
+              RATINGS:
+              {
+                
+                hollowStars(4)
+              }
+              
+
+
+            </h3>
+            <p className="blueFont" id="ratings">
+              {" "}
+              200 Ratings
+            </p>
+            <p
+              style={{
+                textAlign: "center",
+              }}
+            >
+              |
+            </p>
+            <p className="blueFont" id="comments">
+              10 Comments
+            </p>
           </div>
-          <h3>Product Description</h3>
+          <h3 className="prod_desc_info">Product Description</h3>
           <div className="prc-4thLine">
             <p className="blueFont">BRAND: JD9</p>
             <p className="blueFont">CATEGORY: PRINTING MATERIALS</p>
@@ -103,7 +135,7 @@ function Info() {
         </div>
 
         <div className="prod-customerReview">
-          <h1 id='customer-reviews'>Customer Reviews (10)</h1>
+          <h3>Customer Reviews (10)</h3>
           <div className="prod-singleReview">
             <p>
               The product quality is really good. It looks the same as in the
