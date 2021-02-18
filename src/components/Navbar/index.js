@@ -14,7 +14,7 @@ function Navbar() {
         <>
             <div className="Navbar">
                 <div className="logo">
-                    <Link className="linkStyle" to="/"><h2>DMSNE2</h2></Link>
+                    <Link className="linkStyle" to="/"><h2>DMSNE</h2></Link>
                 </div>
                 <div className="Search-Bar">
                     <form action="#">
