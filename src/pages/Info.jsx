@@ -13,7 +13,7 @@ const Info = () => {
             <Navbar />
             <Catagories />
             </div>
-            <ImageSlider />
+            {/* <ImageSlider /> */}
             <InfoComponent />
             <FooterComponent />
         </>

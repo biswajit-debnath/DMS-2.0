@@ -4,7 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 80vh;
-
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -24,6 +24,7 @@
 
 .subscribe_child p {
     margin: 2rem;
+    text-align:center;
 }
 
 .subscribe-btn {
@@ -62,4 +63,60 @@
 
 .footer_child1_heading {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 760px) {
+  .subscribe_parent {
+    height: 70vh;
+    width: 100%;
+  }
+
+  .subscribe_child {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  #subscribe-1stLine {
+    font-size: 1.1rem;
+  }
+
+  #subscribe-2ndLine {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: .7rem;
+  }
+
+  #subscribe-3ndLine {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: .7rem;
+  }
+
+  .subscribe-btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #subscribe-btnInput {
+    flex-grow: 1;
+    height: 95%;
+  }
+
+  #subscribe-btnSubmit {
+    flex-basis: 1;
+    border-radius: 0;
+    height: 95%;
+    width: 112px;
+    margin: .3rem;
+    padding: .2rem;
+    /* padding-right: .2rem; */
+    /* font-size: .7rem; */
+    color: white;
+    background-color: #32353c;
+    border: none;
+  }
 }

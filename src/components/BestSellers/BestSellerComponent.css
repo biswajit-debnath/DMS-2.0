@@ -82,18 +82,12 @@
   }
   
   .bestS_childTop_child{
-      
       width: 100%;
-      
-  
       display: flex;
       align-content: center;
       text-align: center;
       justify-content: center;
-      align-items: center;
-      
-      
-      
+      align-items: center;    
   }
   
   #bestS-sa{
@@ -186,3 +180,33 @@
       font-size: 1.8rem;
   }
   
+  @media screen and (max-width: 375px) {
+    .bestS_parent-heading-bold {
+        font-size: 1rem;
+        color: #ECECEC;
+        margin-left: .3rem;
+    }
+
+    .bestS_parent-heading p {
+        font-size: .5rem;
+        font-weight: bold;
+        color: #32436b;
+        display: flex;
+        align-items: center;
+        margin-top: -29px;
+        margin-left: -.7rem;
+        line-height: 0 !important;
+        margin-bottom: 7vh;
+    }
+
+    .bestS_childBottom_parent{
+        display: flex;
+        width: 84%;
+        height: 55vh;
+        align-items: center;
+        justify-content:center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+      
+  }

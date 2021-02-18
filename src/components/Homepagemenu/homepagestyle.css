@@ -26,7 +26,7 @@
     margin-left: 1.5rem;
     line-height: 0 !important;
     margin-bottom: 7vh;
-  }
+}
 
 .menu-name {
     font-size: 1.5rem;
@@ -61,7 +61,7 @@
 .menu-product {
     border-radius: 10px;
     flex: 0 0 280px;
-    
+    margin-bottom: 3rem;
 }
 
 .menu-product-img {
@@ -132,4 +132,78 @@
 .menu-btn:hover {
     background-color: #EF4343;
     color: #fff;
-  }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-heading-bold {
+        font-size: 1.3rem;
+        color: #ECECEC;
+    }
+    
+    .menu-heading-bold p {
+        font-size: .9rem;
+        font-weight: bold;
+        color: #32436b;
+        display: flex;
+        align-items: center;
+        margin-top: -35px;
+        margin-left: 1.5rem;
+        line-height: 0 !important;
+        margin-bottom: 7vh;
+    }
+
+    .menu-view {
+        font-weight: 600;
+        font-size: .8rem;
+        color: #32436b;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: -1rem;
+        margin-top: -9vh !important;
+        line-height: 0 !important;
+        cursor: pointer;
+        border-bottom: 1px solid #32436b;
+    }
+
+    .menu-view span {
+        margin-right: -1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .menu-heading-bold {
+        font-size: 1rem;
+        color: #ECECEC;
+    }
+    
+    .menu-heading-bold p {
+        font-size: .5rem;
+        font-weight: bold;
+        color: #32436b;
+        display: flex;
+        align-items: center;
+        margin-top: -29px;
+        margin-left: 1.5rem;
+        line-height: 0 !important;
+        margin-bottom: 7vh;
+    }
+
+    .menu-view {
+        font-weight: 600;
+        font-size: .8rem;
+        color: #32436b;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: -1rem;
+        margin-top: -9vh !important;
+        line-height: 0 !important;
+        cursor: pointer;
+        border-bottom: 1px solid #32436b;
+    }
+
+    .menu-view span {
+        margin-right: -1rem;
+    }
+}
