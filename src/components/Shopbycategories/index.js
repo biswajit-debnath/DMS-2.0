@@ -14,9 +14,9 @@ function Shopbycategories() {
   return (
     <div className="shopbycategories-wrapper">
       <div className="shopbycategories-heading">
-          <div className='shopbycategories-heading-bold'>
-              <h1>CATEGORIES</h1>
-          </div>
+        <div className="shopbycategories-heading-bold">
+          <h1>CATEGORIES</h1>
+        </div>
         <p>
           <span>
             <IconContext.Provider value={{ color: "#32436b", size: "50px" }}>
@@ -28,22 +28,27 @@ function Shopbycategories() {
       </div>
       <div className="shopbycategories-products">
         <div className="product-div1">
-            <img className='product-div1-img' src={img1} />
+          <img className="product-div1-img" src={img1} />
+
           <p className="categories-product-name">Handbags</p>
           <p className="categories-product-desc">FW 2020 Limited Edition</p>
         </div>
         <div className="product-div2">
           <div className="product-div-top">
-            <div style={{width:"80%",margin:'auto'}}>
-            <img className='product-div-top-img' src={img2} />
-            <p className="categories-product-name">
-              IT and Computer Accessories
-            </p>
-            <p className="categories-product-desc">3CE 2019 Limited Edition</p>
+            <div style={{ width: "80%", margin: "auto" }}>
+              <Link className="linkStyle" to="/listing/hardware">
+                <img className="product-div-top-img" src={img2} />
+              </Link>
+              <p className="categories-product-name">
+                IT and Computer Accessories
+              </p>
+              <p className="categories-product-desc">
+                3CE 2019 Limited Edition
+              </p>
             </div>
           </div>
           <div className="product-div-bottom">
-            <img className='product-div-bottom-img' src={img4} />
+            <img className="product-div-bottom-img" src={img4} />
             <p className="categories-product-name">Electronics</p>
             <p className="categories-product-desc">
               Limited Edition Headphones
@@ -51,7 +56,7 @@ function Shopbycategories() {
           </div>
         </div>
         <div className="product-div3">
-          <img className='product-div3-img' src={img3} />
+          <img className="product-div3-img" src={img3} />
           <p className="categories-product-name">Jumpers & Cardigans</p>
           <p className="categories-product-desc">Cable Knitted Neck Sweater</p>
         </div>

@@ -27,11 +27,13 @@ function Homepagemenu() {
                         PRINTING SERVICES
                     </p>
                     </div>
-                    <p className='menu-view'>View All<span>
+                    
+                    <p className='menu-view'><Link className="linkStyle" to="/listing/Printing Service">View All</Link><span>
                             <IconContext.Provider value={{ color: "#32436b", size: "25px"}}>
                                  <FiIcons.FiArrowRight />
                             </IconContext.Provider>
                     </span></p>
+                    
                 </div>
                 <div className='menu-products'>
                     <div className='menu-product'>

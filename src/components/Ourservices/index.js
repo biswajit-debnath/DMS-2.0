@@ -23,6 +23,7 @@ function Ourservices() {
                 </p>
             </div>
             <div className='service-wrapper'>
+                
                 <div className='div-left'>
                     <div className='service-dec'>
                         <p>LIVING IN  COLORS</p>

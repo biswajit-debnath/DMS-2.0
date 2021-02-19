@@ -1,40 +1,60 @@
-import React, { useState } from 'react';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import { Link } from 'react-router-dom';
-import { SidebarData } from './SidebarData';
-import './index.css';
-import { IconContext } from 'react-icons';
+import React, { useState } from "react";
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
+import { Link } from "react-router-dom";
+import { SidebarData } from "./SidebarData";
+import "./index.css";
+import { IconContext } from "react-icons";
+import { db,storage,auth } from '../../config/firebase';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
 
+  // const handleClick = (e) => {
+  //   console.log(e.target.id);
+  //   db.ref("printing service").on("value", snap => {
+  //     console.log(snap.val());
+  //   })  
+  // }
+
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff' }}>
-        <div className='navbar'>
-          <div className='catagories-bar'>
-            <Link  to='#' className='menu-bars'>
-                <FaIcons.FaBars onClick={showSidebar} />
+      <IconContext.Provider value={{ color: "#fff" }}>
+        <div className="navbar">
+          <div className="catagories-bar">
+            <Link to="#" className="menu-bars">
+              <FaIcons.FaBars onClick={showSidebar} />
             </Link>
-            <p className='catagories-desc'>See all Catagories</p>
-          <div className="triangle"></div>
+            <p className="catagories-desc">See all Catagories</p>
+            <div className="triangle"></div>
           </div>
 
-          <Link className="linkStyle" to="/listing"><p className='display-catagories'>Printing Material</p></Link>
-          <a className='display-catagories'>Printing Services</a>
-          <a className='display-catagories'>Printing Machinary</a>
-          <a className='display-catagories'>Clothing</a>
-          <a className='display-catagories'>Electronics</a>
-          <a className='display-catagories'>IT & Computer Acessories</a>
-          <a className='display-catagories'>Web & App Development</a>
+          <Link className="linkStyle" to="/listing/Printing Material">
+            <p className="display-catagories">Printing Material</p>
+          </Link>
+          <Link className="linkStyle" to="/listing/Printing Service">
+            <p className="display-catagories">Printing Services</p>
+          </Link>
+          <Link className="linkStyle" to="/listing/machinary">
+            <p className="display-catagories">Printing Machinary</p>
+          </Link>
+          <Link className="linkStyle" to="/listing/machinary">
+            <p className="display-catagories">Clothing</p>
+          </Link>
+          <Link className="linkStyle" to="/listing/hardware">
+            <p className="display-catagories">Electronics</p>
+          </Link>
+          <Link className="linkStyle" to="/listing/hardware">
+            <p className="display-catagories">IT & Computer Acessories</p>
+          </Link>
+          <a className="display-catagories">Web & App Development</a>
         </div>
-        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-          <ul className='nav-menu-items' onClick={showSidebar}>
-            <li className='navbar-toggle'>
-              <Link to='#' className='menu-bars'>
+        <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+          <ul className="nav-menu-items" onClick={showSidebar}>
+            <li className="navbar-toggle">
+              <Link to="#" className="menu-bars">
                 <AiIcons.AiOutlineClose />
               </Link>
             </li>
