@@ -12,7 +12,7 @@ export const SidebarData = [
   },
   {
     title: 'Printing Services',
-    path: '/printing_services',
+    path: '/listing/Printing Service',
     icon: <IoIcons.IoIosPaper />,
     cName: 'nav-text'
   },
@@ -24,7 +24,7 @@ export const SidebarData = [
   },
   {
     title: 'Computer Accoriess',
-    path: '/computer_accories',
+    path: '/listing/hardware',
     icon: <IoIcons.IoMdPeople />,
     cName: 'nav-text'
   },

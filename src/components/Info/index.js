@@ -120,8 +120,12 @@ function Info() {
           <hr></hr>
           <h3 className="prod_desc_info">Product Description</h3>
           <div className="prc-4thLine">
-            <p className="blueFont">BRAND: <span>JD9</span></p>
-            <p className="blueFont">CATEGORY: <span>PRINTING MATERIALS</span></p>
+            <p className="blueFont">
+              BRAND: <span>JD9</span>
+            </p>
+            <p className="blueFont">
+              CATEGORY: <span>PRINTING MATERIALS</span>
+            </p>
           </div>
 
           <div className="productInfo">

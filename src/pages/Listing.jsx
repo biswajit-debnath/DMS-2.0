@@ -5,7 +5,7 @@ import FooterComponent from '../components/Footer';
 import ImageSlider from '../components/Hero';
 import Products from '../components/Products';
 
-const Listing = () => {
+const Listing = (props) => {
     
     return(
         <>
@@ -14,7 +14,7 @@ const Listing = () => {
             <Catagories />
             </div>
             <ImageSlider />
-            <Products />
+            <Products props={props}/>
             <FooterComponent />
         </>
     )
