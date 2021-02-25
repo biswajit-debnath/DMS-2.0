@@ -7,16 +7,13 @@ import Products from '../components/Products';
 import { db } from '../config/firebase';
 
 
-const Listing = (props) => {
+const SearchListing = (props) => {
     const [items,setItems] = useState([]);
     const [isLoaded,setIsLoaded] = useState(false);
 
     useEffect( ()=>{
-        db.ref(props.location.pathname.split("/")[2].toLowerCase()).on("value", snap => {
-            setItems(Object.values(snap.val()));
-            console.log(Object.values(snap.val())[0]);
-            setIsLoaded(true);
-        })
+        db.ref('/').orderByChild('name').equalTo("Cap").once("value",snap=> {console.log(snap.val());});
+
     },[props])
 
     return(
@@ -32,4 +29,4 @@ const Listing = (props) => {
     )
 }
 
-export default Listing;
+export default SearchListing;

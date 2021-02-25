@@ -18,8 +18,9 @@
     border-width: 0.1rem; */
   }
 
-  .logo {
-    color: #000;
+  .logo h2 {
+    color: #000 !important;
+    font-size: 2rem
   }
 
   .Search-Bar {
@@ -103,6 +104,10 @@
         
           .logo {
             margin-top: -6vh;
+          }
+
+          .logo h2 {
+            font-size: 1.5rem;
           }
         
           .Search-Bar {
