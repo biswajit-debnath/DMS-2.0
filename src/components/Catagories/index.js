@@ -5,19 +5,11 @@ import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 import "./index.css";
 import { IconContext } from "react-icons";
-import { db,storage,auth } from '../../config/firebase';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
-
-  // const handleClick = (e) => {
-  //   console.log(e.target.id);
-  //   db.ref("printing service").on("value", snap => {
-  //     console.log(snap.val());
-  //   })  
-  // }
 
   return (
     <>

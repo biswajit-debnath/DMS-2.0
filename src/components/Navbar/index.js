@@ -14,12 +14,11 @@ function Navbar() {
         <>
             <div className="Navbar">
                 <div className="logo">
-                    <Link className="linkStyle" to="/"><h2>DMSNE</h2></Link>
+                    <Link  to="/"><h2>DMSNE</h2></Link>
                 </div>
                 <div className="Search-Bar">
-                    <form action="#">
-                        <input class="search__input" type="text" placeholder="  Search..."  name="search" />
-                        {/* <button type="submit">Submit</button> */}
+                    <form onSubmit={(e)=>{e.preventDefault();window.location.replace(`/searchListing/${e.target[0].value}`);}}>
+                        <input class="search__input" type="text" name="search" placeholder="  Search..."  name="search" />
                     </form>
                 </div>
                 <div className="nav-wrapper">

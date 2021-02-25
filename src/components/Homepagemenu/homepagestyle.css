@@ -93,9 +93,14 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+    margin-top: -6vh;
     line-height: 0 !important;
     cursor: pointer;
     border-bottom: 1px solid #32436b;
+}
+
+.linkStyle {
+    color: #32436b;
 }
 
 .menu-product-name {
@@ -160,7 +165,7 @@
         align-items: center;
         margin-left: auto;
         margin-right: -1rem;
-        margin-top: -9vh !important;
+        margin-top: -8vh !important;
         line-height: 0 !important;
         cursor: pointer;
         border-bottom: 1px solid #32436b;

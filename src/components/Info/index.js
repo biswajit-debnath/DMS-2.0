@@ -1,13 +1,9 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 import {
-  Magnifier,
-  GlassMagnifier,
   SideBySideMagnifier,
-  PictureInPictureMagnifier,
-  MOUSE_ACTIVATION,
-  TOUCH_ACTIVATION,
 } from "react-image-magnifiers";
 import "./index.css";
 
@@ -17,12 +13,20 @@ import paperCutterImgZoomed from "../../assets/paper cutter1.jpg";
 import star_hollow from "../../star_hollow.svg";
 
 import star_filled from "../../star_filled.svg";
+import Homepagemenu from '../Homepagemenu';
 
-function Info() {
-  const [currentImage, setCurrentImage] = useState(paperCutterImg);
-  const [currentZoomedImage, setCurrentZoomedImage] = useState(
-    paperCutterImgZoomed
-  );
+function Info({data,isLoaded}) {
+  const [currentImage, setCurrentImage] = useState('');
+  const [currentZoomedImage, setCurrentZoomedImage] = useState('');
+
+  // setCurrentImage(data.img);
+  // console.log(currentImage);
+  
+  // let ratings = data.ratings;
+
+  useEffect(()=> {
+    setCurrentImage(data.img);
+  })
 
   const changeImage = (clickedImage) => {
     setCurrentImage(clickedImage);
@@ -43,8 +47,11 @@ function Info() {
 
     return x.concat(y);
   }
+if(!isLoaded) return <div>Loading......</div>
+
 
   return (
+    <>
     <div className="productMain_parent">
       <div class="productMain_left">
         <div className="productMain-img" id="productMain-il">
@@ -92,7 +99,7 @@ function Info() {
       <div className="productMain_Right">
         <div>
           <h2 className="prod-heading">
-            JD9 Paper Cutter A4 Heavy Duty Professional Paper Trimmer
+            {data.name}
           </h2>
           <div className="prc-2ndLine">
             <h3>
@@ -103,17 +110,20 @@ function Info() {
             <div className="prc-2ndLine-left">
               <p className="blueFont" id="ratings">
                 {" "}
-                200 Ratings
+                {data.total_ratings} Rating
               </p>
               <p
                 style={{
                   textAlign: "center",
+                  color:"#3858a2",
+                  marginLeft:".2%",
+                  marginRight:".2%"
                 }}
               >
                 |
               </p>
               <p className="blueFont" id="comments">
-                10 Comments
+              {data.total_comment} Comment
               </p>
             </div>
           </div>
@@ -121,25 +131,22 @@ function Info() {
           <h3 className="prod_desc_info">Product Description</h3>
           <div className="prc-4thLine">
             <p className="blueFont">
-              BRAND: <span>JD9</span>
+              BRAND: <span>{data.brand}</span>
             </p>
             <p className="blueFont">
-              CATEGORY: <span>PRINTING MATERIALS</span>
+              CATEGORY: <span>{data.category}</span>
             </p>
           </div>
 
           <div className="productInfo">
-            High Quality:This paper cutter is made of high-quality steel and
-            plastic. The durable solid metal base and sturdy blades make
-            accurate and straight cuts, also easily portable and never deformed
-            nor broken. paper cutter a4 paper cutter paper trimmer
+          {data.product_desc}
           </div>
 
           <p className="originalPrice">
-            M.R.P : &nbsp; &nbsp;<del>RS 1999</del>{" "}
+            M.R.P : &nbsp; &nbsp;<del>{data.mrp}</del>{" "}
           </p>
           <p className="ourPrice">
-            Our Price: RS 899 <span>(50% OFF)</span>
+            Our Price: RS 899 <span>({data.offer}% OFF)</span>
           </p>
 
           <button className="btnContactUs">CONTACT US</button>
@@ -149,18 +156,16 @@ function Info() {
         <div className="review-section">
           <hr className="after2ndline"></hr>
           <div className="prod-customerReview">
-            <h3 className="prod-cust_review">Customer Reviews (10)</h3>
+            <h3 className="prod-cust_review">Customer Reviews ({data.ratings})</h3>
 
             <div className="prod-singleReview">
               <p>
-                The product quality is really good. It looks the same as in the
-                images provided. There were no color difference in the product
-                that was delivered. I am very much satisfied with the product
+                {data.reviews.review1.desc}
               </p>
               <div className="prod-reviewDetails">
                 <div className="prod-reviewDetails-nameDate">
-                  <p>Vineeth Nambiar |&nbsp;</p>
-                  <p> 11 Dec 2020</p>
+                  <p>{data.reviews.review1.name} |&nbsp;</p>
+                  <p> {data.reviews.review1.date}</p>
                 </div>
                 <div>
                   <p></p>
@@ -173,14 +178,12 @@ function Info() {
 
           <div className="prod-singleReview">
             <p>
-              The product quality is really good. It looks the same as in the
-              images provided. There were no color difference in the product
-              that was delivered. I am very much satisfied with the product
+            {data.reviews.review2.desc}
             </p>
             <div className="prod-reviewDetails">
               <div className="prod-reviewDetails-nameDate">
-                <p>Vineeth Nambiar |&nbsp;</p>
-                <p> 11 Dec 2020</p>
+                <p>{data.reviews.review2.name} |&nbsp;</p>
+                <p> {data.reviews.review2.date}</p>
               </div>
               <div>
                 <p></p>
@@ -192,6 +195,8 @@ function Info() {
         </div>
       </div>
     </div>
+    <Homepagemenu />
+    </>
   );
 }
 

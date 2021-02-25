@@ -3,15 +3,15 @@ import "firebase/auth";
 
 // Your web app's Firebase configuration
 let firebaseConfig = {
-    apiKey: "AIzaSyAV0vy8QIztdK6S2Bpg9DQRmZbFTsiG9Xk",
-    authDomain: "dmsne-testing.firebaseapp.com",
-    databaseURL: "https://dmsne-testing-default-rtdb.firebaseio.com",
-    projectId: "dmsne-testing",
-    storageBucket: "dmsne-testing.appspot.com",
-    messagingSenderId: "107694033164",
-    appId: "1:107694033164:web:960f82dbd47a5cd218a129",
-    measurementId: "G-DDDQCVS14K"
-  };
+  apiKey: "AIzaSyCt7WYEUOD8LvgQ3E0v8MxBNPLSvZIECsY",
+  authDomain: "dmsne-test.firebaseapp.com",
+  databaseURL: "https://dmsne-test-default-rtdb.firebaseio.com",
+  projectId: "dmsne-test",
+  storageBucket: "dmsne-test.appspot.com",
+  messagingSenderId: "267941366529",
+  appId: "1:267941366529:web:558e54c331615e32c66900",
+  measurementId: "G-EX4LLTL5XG"
+};
   // Initialize Firebase
   Firebase.initializeApp(firebaseConfig);
   

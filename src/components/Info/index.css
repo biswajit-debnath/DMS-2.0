@@ -93,7 +93,7 @@
 
 .prc-2ndLine {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -125,6 +125,14 @@
 
 .prc-4thLine p {
   flex-grow: 1;
+}
+
+.prc-2ndLine-left {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-left: 3%;
+  width: 50%;
 }
 
 .originalPrice {
@@ -369,7 +377,7 @@ hr {
 
   .prc-2ndLine-left {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     text-align: left;
   }
 
