@@ -14,7 +14,6 @@ const SearchListing = (props) => {
     useEffect( ()=>{
         let arr=[];
         db.ref('searchList/').orderByChild('term').startAt(props.location.pathname.split("/")[2]).endAt(`${props.location.pathname.split("/")[2]}\uf8ff`).once("value",snap=> {
-            console.log(Object.values(snap.val())[0].category);
             if(snap.val())
             db.ref(`${Object.values(snap.val())[0].category}/`).orderByChild('term').startAt(props.location.pathname.split("/")[2]).endAt(`${props.location.pathname.split("/")[2]}\uf8ff`).once("value",data=> {
                 console.log(data.val());

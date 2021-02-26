@@ -15,6 +15,7 @@ export default function Card({name,img}) {
     const [heart, setHeart] = useState(false);
     const showHeart = () => {
         setHeart(!heart);
+        
     }
 
     return (

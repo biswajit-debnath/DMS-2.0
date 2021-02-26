@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react';
 import Card from "../Reusable/Product Card/Card";
 import { Link } from "react-router-dom";
 
-function Products({items,isLoaded,props}) {
+function Products({items,isLoaded}) {
 
     if(!isLoaded)
         return (<div>Loading</div>)
