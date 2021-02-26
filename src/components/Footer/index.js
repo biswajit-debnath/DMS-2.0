@@ -1,5 +1,6 @@
 import React from "react";
 import "./FooterComponent.css";
+import { Link } from 'react-router-dom';
 
 export default function FooterComponent() {
   return (
@@ -28,7 +29,9 @@ export default function FooterComponent() {
         </div>
         <div className="footer_child1">
           <p className="footer_child1_heading">Popular Categories</p>
-          <p>Coats</p>
+        
+          
+          <Link to="/searchListing/coats"><p>Coats</p></Link>
           <p>Jeans</p>
           <p>Tops</p>
           <p>Sweaters</p>
