@@ -14,10 +14,10 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route  path="/listing/*" component={Listing} />
-        <Route  path="/Info/" component={Info} />
-        <Route  path="/searchListing/" component={SearchListing} />
+        <Route exact path="/DMS-2.0/" component={Home} />
+        <Route  path="/DMS-2.0/listing/*" component={Listing} />
+        <Route  path="/DMS-2.0/Info/" component={Info} />
+        <Route  path="/DMS-2.0/searchListing/" component={SearchListing} />
       </Switch>
     </Router>
   );
