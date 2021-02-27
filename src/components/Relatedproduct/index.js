@@ -2,24 +2,20 @@ import React, { useEffect, useState } from "react";
 import * as FiIcons from "react-icons/fi";
 import * as BsIcons from "react-icons/bs";
 import { Link } from "react-router-dom";
-import "./homepagestyle.css";
+import "./relatedproduct.css";
 import img1 from "../../assets/cup.png";
 import img2 from "../../assets/printing paper.png";
 import img3 from "../../assets/capFinal.png";
-import heart_img from "../../assets/heart.png";
-import love_icon from "../../assets/loveicon.png";
+import heart from "../../assets/heart.png";
 import { db } from "../../config/firebase";
 import { IconContext } from "react-icons";
 
-function Homepagemenu() {
+function Relatedproduct({ product_category, product_id }) {
   const [items, setItems] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const [heart, setHeart] = useState(false);
-  const showHeart = () => setHeart(!heart);
-
   useEffect(() => {
-    db.ref("printing service").on("value", (snap) => {
+    db.ref(`${product_category}`).on("value", (snap) => {
       setItems(Object.values(snap.val()));
       console.log(Object.values(snap.val())[0]);
       // console.log(Object.values(element.val()));
@@ -27,19 +23,43 @@ function Homepagemenu() {
     });
   }, []);
 
-  let product_1 = 1; // here 1 is the id of the first product.
-  let product_2 = 2; // here 2 is the id of the second product.
-  let product_3 = 3; // here 3 is the id of the third product.
+  console.log(items.id);
+
+  let product_loop = items.length - 3;
+  console.log(product_loop);
+
+  let product_1;
+  let product_2;
+  let product_3;
+
+  if (product_id == product_loop + 1) {
+    product_1 = product_id + 1;
+    product_2 = product_id + 2;
+    product_3 = 1;
+  } else if (product_id == product_loop + 2) {
+    product_1 = product_id + 1;
+    product_2 = 1;
+    product_3 = 2;
+  } else if (product_id == product_loop + 3) {
+    product_1 = 1;
+    product_2 = 2;
+    product_3 = 3;
+  } else {
+    product_1 = product_id + 1; // here 1 is the id of the first product.
+    product_2 = product_id + 2; // here 2 is the id of the second product.
+    product_3 = product_id + 3; // here 3 is the id of the third product.
+  }
 
   if (!isLoaded) return <div>Loading</div>;
-//   console.log(items[product_3 - 1].name);
+  //   console.log(items[product_3 - 1].name);
+  console.log(items.length);
 
   return (
     <>
       <div className="menu">
         <div className="menu-heading">
-          <div className="menu-heading-bold">
-            <h1>PRINTING</h1>
+          <div className="menu-heading-related-product-bold">
+            <h1>RELATED</h1>
             <p>
               <span>
                 <IconContext.Provider
@@ -48,12 +68,12 @@ function Homepagemenu() {
                   <BsIcons.BsDash />
                 </IconContext.Provider>
               </span>
-              PRINTING SERVICES
+              PRODUCT
             </p>
           </div>
 
           <p className="menu-view">
-            <Link className="linkStyle" to="/listing/Printing Service">
+            <Link className="linkStyle" to={`/listing/${product_category}`}>
               View All
             </Link>
             <span>
@@ -66,13 +86,9 @@ function Homepagemenu() {
         <div className="menu-products">
           <div className="menu-product">
             <div className="menu-product-img-background">
-
               <div className="heartImgContainer">
-                {/* <img src={heart_img} className="heartImg" /> */}
-                {heart ? <img src={love_icon} className="loveImg" onClick={showHeart} /> 
-                        : <img src={heart_img} className="heartImg" onClick={showHeart} /> }
+                <img src={heart} className="heartImg" />
               </div>
-
               <div className="menu-product-img">
                 <img src={items[product_1 - 1].img} />
               </div>
@@ -82,7 +98,7 @@ function Homepagemenu() {
               </div>
             </div>
             <div className="manu-product-btn">
-              <Link to={`/info/Printing Service/${product_1}`}>
+              <Link to={`/info/${product_category}/${product_1}`}>
                 <button className="menu-btn">VIEW NOW</button>
               </Link>
             </div>
@@ -90,9 +106,7 @@ function Homepagemenu() {
           <div className="menu-product">
             <div className="menu-product-img-background">
               <div className="heartImgContainer">
-                {/* <img src={heart_img} className="heartImg" /> */}
-                {heart ? <img src={love_icon} className="loveImg" onClick={showHeart} /> 
-                        : <img src={heart_img} className="heartImg" onClick={showHeart} /> }
+                <img src={heart} className="heartImg" />
               </div>
               <div className="menu-product-img">
                 <img src={items[product_2 - 1].img} />
@@ -103,7 +117,7 @@ function Homepagemenu() {
               </div>
             </div>
             <div className="manu-product-btn">
-              <Link to={`/info/Printing Service/${product_2}`}>
+              <Link to={`/info/${product_category}/${product_2}`}>
                 <button className="menu-btn">VIEW NOW</button>
               </Link>
             </div>
@@ -111,7 +125,7 @@ function Homepagemenu() {
           <div className="menu-product">
             <div className="menu-product-img-background">
               <div className="heartImgContainer">
-                <img src={heart_img} className="heartImg" />
+                <img src={heart} className="heartImg" />
               </div>
               <div className="menu-product-img">
                 <img src={items[product_3 - 1].img} />
@@ -122,7 +136,7 @@ function Homepagemenu() {
               </div>
             </div>
             <div className="manu-product-btn">
-              <Link to={`/info/Printing Service/${product_3}`}>
+              <Link to={`/info/${product_category}/${product_3}`}>
                 <button className="menu-btn">VIEW NOW</button>
               </Link>
             </div>
@@ -133,4 +147,4 @@ function Homepagemenu() {
   );
 }
 
-export default Homepagemenu;
+export default Relatedproduct;

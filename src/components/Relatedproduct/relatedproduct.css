@@ -11,19 +11,19 @@
     margin-top: 3rem;
 }
 
-.menu-heading-bold {
+.menu-heading-related-product-bold {
     font-size: 1.8rem;
     color: #ECECEC;
 }
 
-.menu-heading-bold p {
+.menu-heading-related-product-bold p {
     font-size: 1.5rem;
     font-weight: bold;
     color: #32436b;
     display: flex;
     align-items: center;
     margin-top: -35px;
-    margin-left: 1.5rem;
+    margin-left: 6.5rem;
     line-height: 0 !important;
     margin-bottom: 7vh;
 }
@@ -87,13 +87,6 @@
     margin-left: auto;
 }
 
-.loveImg {
-    margin-left: auto;
-    width: 1.2rem;
-    margin-left: auto;
-    font-size: 5rem;
-}
-
 .menu-view {
     font-weight: 600;
     color: #32436b;
@@ -147,12 +140,12 @@
 }
 
 @media screen and (max-width: 768px) {
-    .menu-heading-bold {
+    .menu-heading-related-product-bold {
         font-size: 1.3rem;
         color: #ECECEC;
     }
     
-    .menu-heading-bold p {
+    .menu-heading-related-product-bold p {
         font-size: .9rem;
         font-weight: bold;
         color: #32436b;
@@ -184,13 +177,13 @@
 }
 
 @media screen and (max-width: 375px) {
-    .menu-heading-bold {
+    .menu-heading-related-product-bold {
         font-size: 1rem;
         color: #ECECEC;
     }
     
-    .menu-heading-bold p {
-        font-size: .5rem;
+    .menu-heading-related-product-bold p {
+        font-size: .7rem;
         font-weight: bold;
         color: #32436b;
         display: flex;

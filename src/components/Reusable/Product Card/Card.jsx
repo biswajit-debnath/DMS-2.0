@@ -5,9 +5,6 @@ import { Link } from 'react-router-dom';
 import '../../Products/index.css';
 // import img from '../../../assets/burnfitness.png';
 import img1 from '../../../assets/product1.png';
-// import img2 from '../../assets/product2.png';
-// import img3 from '../../assets/product3.png';
-
 
 export default function Card({name,img}) {
     const [heart, setHeart] = useState(false);

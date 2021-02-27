@@ -255,6 +255,11 @@ hr {
   line-height: 150%;
 }
 
+.originalPrice del{
+  text-decoration: line-through;
+}
+
+
 @media screen and (max-width: 760px) {
   .productMain_Right {
     width: 100%;
@@ -424,6 +429,8 @@ hr {
 
   .prc-2ndLine-left {
     display: flex;
+    width: 70%;
+    margin-left: -.01rem;
   }
 
   .productMain-imgSmall {
@@ -446,4 +453,5 @@ hr {
   #comments {
     text-align: start;
   }
+  
 }
