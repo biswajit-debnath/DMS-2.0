@@ -1,3 +1,13 @@
+a{
+color: white;
+
+}
+
+a:hover{
+  color: wheat;
+  
+  }
+
 .footer_parent {
   background-color: #060b26;
   opacity: 1;
