@@ -8,6 +8,7 @@ import img1 from '../../assets/Banner-cabinet CPU.png';
 import img2 from '../../assets/Banner-monitor.png';
 import img3 from '../../assets/Banner-Keyboard2.png';
 import img4 from '../../assets/Banner-hard drive.png';
+import loader from '../../assets/loading-200px.gif';
 import { IconContext } from "react-icons";
 import { db } from "../../config/firebase";
 
@@ -31,7 +32,7 @@ function Homepagemenu2() {
     let product_3 = 12; // here 3 is the id of the third product.
     let product_4 = 4; // here 4 is the id of the forth product.
 
-    if (!isLoaded) return <div>Loading</div>;
+    if (!isLoaded) return <div> <img src={loader} alt="Loading..." /> </div>;
 
     console.log(items[product_3 - 1].name);
   

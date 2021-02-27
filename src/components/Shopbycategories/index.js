@@ -28,8 +28,9 @@ function Shopbycategories() {
       </div>
       <div className="shopbycategories-products">
         <div className="product-div1">
-          <img className="product-div1-img" src={img1} />
-
+          <Link className="linkStyle" to="/listing/hardware">
+            <img className="product-div1-img" src={img1} />
+          </Link>
           <p className="categories-product-name">Handbags</p>
           <p className="categories-product-desc">FW 2020 Limited Edition</p>
         </div>
@@ -48,7 +49,9 @@ function Shopbycategories() {
             </div>
           </div>
           <div className="product-div-bottom">
-            <img className="product-div-bottom-img" src={img4} />
+            <Link className="linkStyle" to="/listing/machinary">
+              <img className="product-div-bottom-img" src={img4} />
+            </Link>
             <p className="categories-product-name">Electronics</p>
             <p className="categories-product-desc">
               Limited Edition Headphones
@@ -56,7 +59,9 @@ function Shopbycategories() {
           </div>
         </div>
         <div className="product-div3">
-          <img className="product-div3-img" src={img3} />
+          <Link className="linkStyle" to="/listing/hardware">
+            <img className="product-div3-img" src={img3} />
+          </Link>
           <p className="categories-product-name">Jumpers & Cardigans</p>
           <p className="categories-product-desc">Cable Knitted Neck Sweater</p>
         </div>

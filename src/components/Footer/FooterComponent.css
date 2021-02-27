@@ -82,7 +82,7 @@ hr {
     display: none;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 411px) {
     .responsive-footer {
         display: block;
         background-color: #060b26;

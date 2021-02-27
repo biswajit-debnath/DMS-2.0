@@ -13,7 +13,7 @@ import paperCutterImgZoomed from "../../assets/paper cutter1.jpg";
 import star_hollow from "../../star_hollow.svg";
 
 import star_filled from "../../star_filled.svg";
-import Homepagemenu from '../Homepagemenu';
+import Relatedproduct from '../Relatedproduct';
 
 function Info({data,isLoaded}) {
   const [currentImage, setCurrentImage] = useState('');
@@ -22,11 +22,14 @@ function Info({data,isLoaded}) {
   // setCurrentImage(data.img);
   // console.log(currentImage);
   
-  // let ratings = data.ratings;
+  let product_category = data.category;
+  let product_id = data.id;
+  console.log(product_id);
+  console.log(data.name);
 
   useEffect(()=> {
     setCurrentImage(data.img);
-  })
+  },[data.img])
 
   const changeImage = (clickedImage) => {
     setCurrentImage(clickedImage);
@@ -66,10 +69,10 @@ if(!isLoaded) return <div>Loading......</div>
           <img
             className="productMain-imgSmall"
             id="productMain-is1"
-            src="https://5.imimg.com/data5/MW/YR/MY-2818798/cp-a4-size-metal-grip-hand-held-paper-cutter-500x500.jpg"
+            src="https://firebasestorage.googleapis.com/v0/b/dmsne-test.appspot.com/o/categories%2Fprinting_services%2Fpillow2.jpg?alt=media&token=a58a3a03-c9ff-43e3-a12e-823ab5909861"
             onClick={() =>
               changeImage(
-                "https://5.imimg.com/data5/MW/YR/MY-2818798/cp-a4-size-metal-grip-hand-held-paper-cutter-500x500.jpg"
+                "https://firebasestorage.googleapis.com/v0/b/dmsne-test.appspot.com/o/categories%2Fprinting_services%2Fpillow2.jpg?alt=media&token=a58a3a03-c9ff-43e3-a12e-823ab5909861"
               )
             }
           ></img>
@@ -117,7 +120,7 @@ if(!isLoaded) return <div>Loading......</div>
                   textAlign: "center",
                   color:"#3858a2",
                   marginLeft:".2%",
-                  marginRight:".2%"
+                  marginRight:".2%",
                 }}
               >
                 |
@@ -195,7 +198,8 @@ if(!isLoaded) return <div>Loading......</div>
         </div>
       </div>
     </div>
-    <Homepagemenu />
+    <Relatedproduct product_category={product_category} product_id={product_id} />
+    {/* <Homepagemenu /> */}
     </>
   );
 }
