@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 
 function Products({items,isLoaded}) {
 
+    useEffect(()=> {
+        
+    });
+
     if(!isLoaded)
         return (<div>Loading</div>)
     if(items.length === 0)
