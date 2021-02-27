@@ -39,6 +39,7 @@
     /* padding-right: 1rem; */
     height: 58px;
     display: flex;
+    color: #212a57;
     align-items: center;
     cursor: pointer;
     font-family: 'Yusei Magic', sans-serif; 
