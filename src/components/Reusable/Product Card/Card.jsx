@@ -8,9 +8,7 @@ import img1 from '../../../assets/product1.png';
 
 export default function Card({name,img}) {
     const [heart, setHeart] = useState(false);
-    const showHeart = () => {
-        setHeart(!heart);
-    }
+    const showHeart = () => setHeart(!heart);
 
     return (
         <div className='product-wrapper'>
