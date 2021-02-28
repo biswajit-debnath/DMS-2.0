@@ -3,7 +3,7 @@ import Card from "../Reusable/Product Card/Card";
 import { Link } from "react-router-dom";
 import loader from '../../assets/loading-200px.gif';
 
-function Products({items,isLoaded}) {
+function Products({items,isLoaded,props}) {
 
     useEffect(()=> {
         
