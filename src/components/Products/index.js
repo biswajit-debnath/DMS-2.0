@@ -5,9 +5,6 @@ import loader from '../../assets/loading-200px.gif';
 
 function Products({items,isLoaded}) {
 
-    useEffect(()=> {
-        
-    });
 
     if(!isLoaded)
         return (<div className='loader'> <img src={loader} alt="Loading..." /> </div>)
