@@ -8,6 +8,6 @@ An Ecommerce appication design in Adove XD developed in MERN stack.
 ### `Node`
 
 ### Url
-`http://test.dmsne.com/`
+http://test.dmsne.com/
 
 
