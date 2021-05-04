@@ -7,4 +7,7 @@ An Ecommerce appication design in Adove XD developed in MERN stack.
 ### `React`
 ### `Node`
 
+### Url
+`http://test.dmsne.com/`
+
 
